@@ -7,7 +7,7 @@ const btnDecrement = document.querySelector('button[data-action="decrement"]');
 const btnIncrement = document.querySelector('button[data-action="increment"]');
 // console.log(btnIncrement);
 
-let counterValue = valueRef.textContent = 0;
+let counterValue = 0;
 const makeIncrement = () => {
     counterValue += 1;
     // console.log(counterValue);
