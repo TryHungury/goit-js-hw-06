@@ -22,3 +22,27 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+
+/* TASK 3 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.gallery__item {
+  display: flex;
+  max-width: 33%;
+  /* width: 400px; */
+}
+
+.gallery__img {
+  display: block;
+	max-width: 100%;
+  padding: 1rem;
+  box-shadow: solid 1px #212121;
+  /* width: 300px; */
+	height: auto;
+}
+/* ******************** */
