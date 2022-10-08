@@ -8,7 +8,7 @@ const ingredients = [
 ];
 
 const ulRef = document.querySelector('#ingredients');
-console.log(ulRef);
+// console.log(ulRef);
 
 function makeListName(ingredientsName) {
   // let nodeRef = ulRef;
