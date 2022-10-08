@@ -5,11 +5,11 @@ const outputRef = document.querySelector('#name-output');
 // console.log("🚀outputRef", outputRef);
 
 
-inputRef.addEventListener('input', (event) => {
-    if (event.currentTarget.value) {
-        outputRef.textContent = event.currentTarget.value;
-    } else  {
-        outputRef.textContent = 'Anonymous';
-    }
+inputRef.addEventListener('input', (event) => event.currentTarget.value ? outputRef.textContent = event.currentTarget.value : outputRef.textContent = 'Anonymous'
+    // if (event.currentTarget.value) {
+    //     outputRef.textContent = event.currentTarget.value;
+    // } else  {
+    //     outputRef.textContent = 'Anonymous';
+    // }
     // console.log("event.currentTarget.value", event.currentTarget.value)
-});
+);
