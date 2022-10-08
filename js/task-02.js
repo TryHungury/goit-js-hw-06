@@ -10,9 +10,10 @@ const ingredients = [
 const ulRef = document.querySelector('#ingredients');
 // console.log(ulRef);
 
-function makeListName(ingredientsName) {
-  // let nodeRef = ulRef;
 
+function makeListName(ingredientsName) {
+  const arrMarkup = [];
+  
   ingredientsName.forEach(name =>  {
     // console.log(name);
     
@@ -20,9 +21,9 @@ function makeListName(ingredientsName) {
     liItem.textContent = name;
     liItem.classList.add('item')
     
-    ulRef.append(liItem);
-    // console.log(ulRef);
+    arrMarkup.push(liItem)
   })
+  ulRef.append(...arrMarkup);
 
 }
 
