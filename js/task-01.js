@@ -1,8 +1,9 @@
 
-const ulRef = document.querySelector('#categories');
-// console.log(ulRef);
+// const ulRef = document.getElementById('#categories');
+const ulRef = document.body.children[1];
+// console.log("ulRef", ulRef)
 
-const liCategoriesRef = ulRef.querySelectorAll('.item');
+const liCategoriesRef = ulRef.children;
 // console.log(liCategoriesRef);
 
 const quantityCategories = liCategoriesRef.length;
@@ -13,12 +14,15 @@ Number of categories: ${quantityCategories}
 =======================`);
 
 function consoleCategoriesNameAndQuantity(liCategoriesRef) {
-    // const result = 
-    liCategoriesRef.forEach(element => {
-        const h2Ref = element.querySelector('h2');
+    const result = [...liCategoriesRef] 
+    result.forEach(element => {
+        const h2Ref = element.firstElementChild;
         // console.log('Category:', h2Ref.textContent);
         
-        const quantityLi = element.querySelectorAll('li').length;
+        const innerUlRef = element.lastElementChild;
+        // console.log("innerUlRef", innerUlRef)
+
+        const quantityLi = innerUlRef.children.length;
         // console.log("quantityLi", quantityLi)
 
         console.log(`
